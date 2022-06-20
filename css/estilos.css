@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+/* Generales */
+#header, #left-aside, #footer {
+    /*background: hsl(204 100% 5%);*/
+    background: #222325;
+    text-align: center;
+}
+
+#header-logo {
+    height: 100px;
+    width: 20%;
+    justify-content: center;
+}
+
+#menu-section {
+    display: flex;
+    flex-flow: row;
+}
+
+#left-aside {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: max-content max-content;
+    padding: 50px 0;
+}
+
+#left-aside > h1 {
+    font-family: "Exo";
+    margin: 0;
+    line-height: .8;
+    letter-spacing: 5px;
+    font-size: 70px;
+}
+
+#left-aside > h2 {
+    font-family: "Great Vibes", cursive;
+    font-weight: bold;
+    margin: -0.2em;
+    letter-spacing: 2px;
+    font-size: 60px;
+}
+
+#left-aside > h1, #left-aside > h2 {
+    writing-mode: vertical-lr;
+    text-align: end;
+    transform: rotate(180deg);
+    background: linear-gradient(
+        to left, 
+        #cfc09f 22%,
+        #cfc09f 26%, 
+        #cfc09f 27%,
+        #ffecb3 40%,
+        #634f2c 78%
+    ); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+}
+
+.main-article-fondo {
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    height: 800px;
+    margin: 0;
+}
+
+.img-logo {
+    height: 100px;
+    width: fit-content;
+    margin: 20px;
+}
+
+.img-preview {
+    width: 200px;
+    height: 100px;
+    border-radius: 25px;
+}
+
+.img-foto {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+html {
+    font-family: "didot";
+    block-size: 100%;
+    inline-size: 100%;
+}
+
+main {
+    display: flex;
+    flex-flow: row;
+}
+
+main > aside {
+    flex: 20%;
+}
+
+main > article {
+    flex: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+article {
+    font-size: 30px;
+    text-align: center;
+    background: #222325;
+}
+
+table {
+    margin: auto;
+    text-align: left;
+    border-collapse: collapse;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    justify-content: center;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+footer {
+    color: #fff;
+    padding: 20px;
+}
+
+
+
+/* Inicio */
+#main-article-inicio {
+    font-family: 'Kanit', sans-serif;
+    color: #eafff8;  
+    text-align: right;
+}
+
+#main-article-inicio div:first-child {
+    padding: 80px 80px 0 0;
+    font-size: 90px;
+}
+
+#main-article-inicio div:nth-child(2) {
+    padding: 60px 80px 0 0;
+    font-size: 30px;
+}
+
+
+
+/* Cursos */
+#main-article-cursos {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 22px;
+    color: #fff;
+}
+
+#table-cursos caption {
+    font-family: 'Fredericka the Great', cursive;
+    text-decoration: underline 2px;
+    font-size: 60px;
+    color: #f85f83;
+    margin: 10px 0 50px 0;
+}
+
+#table-cursos td {
+    padding: 10px 20px;
+}
+
+#table-cursos tr:hover td {
+    color: #f85f83;
+    font-size: x-large;
+}
+
+.curso {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+
+
+/* Comunidad */
+#main-article-comunidad {
+    background-color: #fff;
+    opacity: 0.8;
+    font-size: 20px;
+}
+
+#table-comunidad {
+    background-color: #f7bd1f;
+    opacity: 0.8;
+    border-radius: 25px;
+}
+
+#table-comunidad caption {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 60px;
+    color: #f7bd1f;
+    background-color: #222325;
+    margin: 10px 0 30px 0;
+    border-radius: 25px;
+}
+
+#table-comunidad td {
+    padding: 10px 20px;
+}
+
+#table-comunidad tr:hover td {
+    background-color: #222325;
+    color: #f7bd1f;
+    border-radius: 25px;
+}
+
+.comunidad {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+
+/* Nosotros */
+#main-article-nosotros {
+    font-size: 20px;
+}
+
+#table-nosotros {
+    opacity: 0.8;
+    border-collapse: separate;
+    border-spacing: 0 60px;
+}
+
+#table-nosotros caption {
+    font-family: 'Exo';
+    font-size: 60px;
+    color: #24d261;
+    margin-top: 10px;
+}
+
+#table-nosotros tr td:nth-child(2) {
+    background-color: #eafff8;
+    border-radius: 100px;
+}
+
+#table-nosotros td {
+    padding: 30px 50px;
+}
+
+.equipo {
+    font-family: "Great Vibes", cursive;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.equipo-frase {
+    font-family: 'Alfa Slab One', cursive;
+    color: #24d261;
+    text-align: right;
+    float: right;
+    max-width: 60%;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-top: 20px;
+}
+
+
+
+
+
+.content-title-4 {
+    background: #6537f7;
+}
